@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Elements";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title class="hero is-primary title is-1 has-text-weight-bold">Elements</title>
+</head>
+
+<body class="has-background-light" style="height: 3000px">
+
+    <div class="notification is-link is-light">
+        <button class="delete"></button>
+        This is a simple Bulma Notification with a delete button.
+    </div>
+    <section class="block">
+        <div class="container">
+            <h1 class="hero is-danger title is-1 is-spaced">
+                <strong>Colors and Sizes</strong>
+            </h1>
+            <p class="subtitle is-1 has-text-danger">
+                Bulma has six primary colors and text sizes.
+            </p>
+            <h1 class="title is-2 has-text-info">
+                Title 2
+            </h1>
+            <p class="subtitle is-2 has-text-info">
+                subtitle 2
+            </p>
+            <h1 class="title has-text-success">
+                Title 3
+            </h1>
+            <p class="subtitle has-text-success">
+                3 is the default class size
+            </p>
+            <h1 class="title is-4 has-text-warning">
+                Title 4
+            </h1>
+            <p class="subtitle is-4 has-text-warning">
+                subtitle 4
+            </p>
+            <h1 class="title is-5 has-text-link">
+                Title 5
+            </h1>
+            <p class="subtitle is-5 has-text-link">
+                subtitle 5
+            </p>
+            <h1 class="title is-6 has-text-primary">
+                Title 6
+            </h1>
+            <p class="subtitle is-6 has-text-primary">
+                subtitle 6
+            </p>
+
+        </div>
+    </section>
+    <section class="block">
+        <h1 class="hero is-warning title">Buttons</h1>
+        <p class="notification is-success is-light">
+            Buttons have 6 main colors as well as light versions of them.
+            Buttons also have several styling techniques:<br />
+
+            - light colors<br />
+            - outlined<br />
+            - Inverted<br />
+            - Rounded<br />
+            - Focused<br />
+            - Loading
+        <p />
+
+        <button class="button is-warning is-light">Light</button>
+        <button class="button is-outlined is-normal is-danger">Normal</button>
+        <button class="button is-inverted is-medium is-primary">Medium</button>
+        <button class="button is-rounded is-large is-success">Large</button>
+        <button class="button is-focused is-info is-light">Focus</button>
+        <button class="button is-link is-loading">Loading</button>
+    </section>
+
+    <section class="block">
+        <h1 class="hero is-info title">Progress Bars</h1>
+        <p class="notification is-info is-light">
+            Progress bars can be styled with colors, sizes, and to show that progress is going on.
+        </p>
+        <progress class="progress is-primary is-small" value="20" max="100">20%</progress>
+        <progress class="progress is-danger is-normal" value="40" max="100">40%</progress>
+        <progress class="progress is-info is-medium" value="60" max="100">60%</progress>
+        <progress class="progress is-link is-large" value="80" max="100">80%</progress>
+        <progress class="progress is-success" max="100">30%</progress>
+    </section>
+    
+    <section class="block">
+        <h1 class="hero is-success title">Images</h1>
+        <p class="notification is-info is-light">
+            Images can be be fixed, rounded, and given ratios.
+        </p>
+        <figure class="image is-96x96">
+            <img class="is-96x96" src="~/Images/security-g8703c492f_1920.jpg" />
+        </figure>
+        <figure class="image is-128x128">
+            <img class="is-rounded" src="~/Images/security-g8703c492f_1920.jpg" />
+        </figure>
+        <figure class="image is-256x256">
+            <img class="is-2by1" src="~/Images/security-g8703c492f_1920.jpg" />
+        </figure>
+    </section>
+</body>
+</html>

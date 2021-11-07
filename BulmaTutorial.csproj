@@ -11,4 +11,9 @@
     <None Remove="wwwroot\myBulma\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+    <Folder Include="wwwroot\Styles\" />
+  </ItemGroup>
+
 </Project>

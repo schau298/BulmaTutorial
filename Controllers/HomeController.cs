@@ -23,6 +23,10 @@ namespace BulmaTutorial.Controllers
             return View();
         }
 
+        public IActionResult Elements()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
