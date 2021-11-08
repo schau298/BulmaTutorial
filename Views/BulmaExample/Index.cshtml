@@ -1,0 +1,66 @@
+﻿@model IEnumerable<BulmaTutorial.Models.BulmaExample>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    
+</head>
+<body style="height: 1000px;" class="has-background-primary-light">
+    <h1 class="hero is-warning title is-1 has-text-weight-bold">Favorite Foods</h1>
+    <p class="subtitle  has-text-info">The Bulma Lab Example</p>
+<p>
+    <a class="button is-success" asp-action="Create">Create</a>
+</p>
+<table class="table is-striped is-hoverable is-bordered is-fullwidth has-background-warning-light">
+    <thead class="has-background-warning has-text-weight-bold">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Food)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Food)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+         
+            <td>
+                <a class="button is-small is-rounded is-warning" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a class="button is-small is-rounded is-info" asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a class="button is-small is-rounded is-danger" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+
+        </tr>
+        }
+    </tbody>
+</table>
+</body>
+</html>
